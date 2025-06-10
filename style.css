@@ -1,5 +1,5 @@
 .barra{
-    background-color: rgb(105, 105, 105);
+    background-color: rgb(168, 168, 168);
 }
 
 .burger{
@@ -17,32 +17,76 @@
     border-radius: 50%;
 }
 
-body{
-    
+.logo2{
+justify-content: center;
+align-items: center;
+margin: 4px;
+border-radius: 50%;
+height: auto;
+width: 10rem;
+}
 
- top: 0;
- right: 0; 
+.eslogan{
+    font-style: italic ;
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(0deg,  white, white);
+    height: 100;
+align-items: center;
+margin: 0;
 }
 
 
 .img{
 animation: aparecer 1s ease-in-out;
- height: 35rem;
- 
+height: 25rem;
+cursor: pointer;
+display: inline-block;
+transition:box-shadow 0.5s ease;
 }
+
+.img:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
+}
+
+.texto-oculto{
+    position: absolute;
+    bottom: 0;
+  background: gray;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1s ease;  
+  text-align: center;
+  margin: 40px;
+}
+
+.contenedor:hover .texto-oculto{
+    opacity: 1;
+}
+
+
 
 .img.show{
 opacity: 1;
 }
 
-.h1-img{
+.contenedor{
+   width: 100%;
+   margin: auto;
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 H1{
     margin: 0;
+    text-align: center;
+
 }
 
 .text{
