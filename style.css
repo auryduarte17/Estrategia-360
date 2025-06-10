@@ -18,16 +18,16 @@
 }
 
 body{
-    background-color: beige;
+    
 
  top: 0;
- right: 0;   
+ right: 0; 
 }
 
 
 .img{
 animation: aparecer 1s ease-in-out;
- 
+ height: 35rem;
  
 }
 
