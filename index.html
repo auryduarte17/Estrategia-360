@@ -38,7 +38,7 @@
         
         
         <li class="nav-item">
-          <a class="nav-link text-light" href="form.html">Registrarse</a>
+          <a class="nav-link text-light" target="_blank"  href="form.html" >Registrarse</a>
   
         </li>
       </ul>
@@ -115,7 +115,7 @@ Estrategia 360 te ofrece lo último en tecnología: smartphones, laptops, reloje
 
                 <!-- Valoración estrellas -->
                 
-                <a href="#" class="btn boton-menu">Ver más</a>
+                <a href="iphone.html" class="btn boton-menu">Ver más</a>
 
               </div>
             </div>
@@ -185,6 +185,32 @@ Estrategia 360 te ofrece lo último en tecnología: smartphones, laptops, reloje
 
 
 <!-- img fin interfaz -->
+
+
+  <!-- Botón Scroll hacia abajo y devuelve al inicio -->
+    <button id="scrollToTopBtn" class="btn btn-primary"
+        style="position:fixed; bottom:40px; right:30px; z-index:9999; width:50px; height:50px; display:none; align-items:center; justify-content:center;">
+        <i class="bi bi-arrow-up fs-3"></i>
+    </button>
+
+    <!-- Código JS para el Botón Scroll hacia abajo y devuelve al inicio -->
+    <script>
+        // Mostrar/ocultar el botón al hacer scroll
+        window.addEventListener('scroll', function () {
+            const btn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 200) {
+                btn.style.display = 'flex';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+
+        // Scroll suave al inicio al hacer clic
+        document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
 
      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

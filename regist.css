@@ -41,6 +41,13 @@ button{
    
 }
 
+.sin-subrayado{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(64, 1, 64);
+}
+
 p{
     text-align: center;
 }
